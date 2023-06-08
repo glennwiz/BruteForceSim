@@ -64,7 +64,9 @@ class Program
 
             Console.Write("Estimated time: ");
             Console.ForegroundColor = Color.Cyan;
-            Console.WriteLine($"{years} years, {days} days, {hours} hours, {minutes} minutes, {seconds} seconds.");
+            Console.WriteLine(
+                $"{years:F0} years, {days:F0} days, {hours:F0} hours, {minutes:F0} minutes, {seconds:F0} seconds."
+            );
             Console.ResetColor();
 
             Console.WriteLine();
